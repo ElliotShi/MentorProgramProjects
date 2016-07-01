@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  each val in data
+    a(href='/api/photo/#{val.pid}')
+      img(src= val.path, style={width: '200px', height: '200px'})
+  

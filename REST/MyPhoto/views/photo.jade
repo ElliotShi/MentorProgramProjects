@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= data.name
+  img(src= data.path, style={width: '300px', height: '300px'})
+  div
+    a(class='button', href='/api/photo/#{data.pid}') Delete
